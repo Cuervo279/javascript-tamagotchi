@@ -1,0 +1,63 @@
+body {
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.tamagotchi-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.screen {
+  display: grid;
+  grid-template-columns: repeat(30, 8px);
+  gap: 2px;
+  background-color: #222;
+  padding: 10px;
+  border: 4px solid #0f0;
+  border-radius: 10px;
+}
+
+.dot-pixel {
+  width: 8px;
+  height: 8px;
+  background-color: #0f0;
+  opacity: 0.15;
+  transition: opacity 0.1s;
+}
+
+.dot-pixel.on {
+  opacity: 1;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+}
+
+.side-buttons {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.side-buttons button {
+  padding: 10px 15px;
+}
+
+.controls button{
+    background-color: rgb(255, 119, 119);
+    width: 100px;
+}
